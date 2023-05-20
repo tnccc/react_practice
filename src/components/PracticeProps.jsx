@@ -15,7 +15,9 @@ export const PracticeProps = () => {
         {...profile[0]}
       />
       <PracticeProfile {...profile[1]} />
-      <PracticeProfile />
+      <PracticeProfile>
+        {'ChildProps'}
+      </PracticeProfile>
     </div>
   )
 }
