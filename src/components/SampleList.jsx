@@ -1,5 +1,4 @@
-export const SampleList = (props) => {
-  const {array} = props
+export const SampleList = ({array}) => {
 
   return (
     <div>

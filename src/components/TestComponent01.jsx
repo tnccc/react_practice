@@ -14,7 +14,7 @@ export const TestComponent01 = () => {
       <h3>HELLO JSX</h3>
       <h3>{ upperCaseText.toUpperCase() }</h3>
       <h3>{ `Hello ${title}` }</h3>
-      <h3>{array.map(el => el)}</h3>
+      <h3>{array}</h3>
       <h3>{fn('Hello')}</h3>
     </Fragment>
   )
