@@ -1,9 +1,18 @@
 import { useState } from "react"
 
 export const StateSample = () => {
+  const [val, setval] = useState(0)
   const [valueA, setValueA] = useState(0)
   const [valueB, setValueB] = useState(0)
   const [valueC, setValueC] = useState(0)
+  const countUp = () => {
+    setval(val + 1)
+  }
+  const countDown = () => {
+    if(val !== 0) {
+      setval(val - 1)
+    } 
+  }
   return (
     <>
       {/* <input onChange={changeHandler} />
@@ -20,6 +29,11 @@ export const StateSample = () => {
       <button onClick={() => {setValueC(valueC + 1)}}>
         ボタンC
       </button>
+      <div>
+        <button onClick={countUp}>+</button>
+        <button onClick={countDown}>-</button>
+        {val}
+      </div>
     </>
   )
 }
