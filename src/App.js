@@ -1,10 +1,11 @@
 import './App.css';
-import StateArray from './components/StateArray';
+import SampleState from './components/SampleState';
+
 
 function App() {
   return (
     <div className="App">
-      <StateArray />
+      <SampleState />
     </div>
   );
 }
