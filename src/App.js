@@ -1,10 +1,10 @@
 import './App.css';
-import StateObj from './components/StateObj';
+import StateArray from './components/StateArray';
 
 function App() {
   return (
     <div className="App">
-      <StateObj />
+      <StateArray />
     </div>
   );
 }
