@@ -1,11 +1,11 @@
 import './App.css';
-import PracticeArray from './components/PracticeArray';
+import PracticeFilterArray from './components/PracticeFilterArray';
 
 
 function App() {
   return (
     <div className="App">
-      <PracticeArray />
+      <PracticeFilterArray />
     </div>
   );
 }
