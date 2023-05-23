@@ -1,11 +1,11 @@
 import './App.css';
-import SampleState from './components/SampleState';
+import PracticeArray from './components/PracticeArray';
 
 
 function App() {
   return (
     <div className="App">
-      <SampleState />
+      <PracticeArray />
     </div>
   );
 }
