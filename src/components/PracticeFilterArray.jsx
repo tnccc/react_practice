@@ -1,8 +1,10 @@
 import { useState } from "react"
+import PersonList from "./PersonList"
+import PersonFilter from "./PersonFilter"
 
 export const PracticeFilterArray = () => {
   const [filterVal, setFilterVal] = useState('')
-  const humans = [
+  const persons = [
     {
       name: 'tom',
       age: 18,
@@ -28,26 +30,15 @@ export const PracticeFilterArray = () => {
       ]
     }
   ]
-  
+  const filteredPersons = persons.filter((person) => {
+    const isMatch = person.name.indexOf(filterVal) !== -1;
+    return isMatch
+  })
   return (
     <>
       <div>
-        <input onChange={(e) => setFilterVal(e.target.value)} value={filterVal} type="text" />
-        {humans
-          .filter(human => human.name.indexOf(filterVal) !== -1)
-          .map(human => 
-          <li key={human.name}>
-            <div>
-              <h3>{human.name}</h3>
-              <p>{human.age}</p>
-              <ul>
-                {human.hobby.map(hobby => 
-                  <li key={hobby}>{hobby}</li>)
-                }
-              </ul>
-            </div>
-          </li>
-        )}
+        <PersonFilter filterState={[filterVal, setFilterVal]}/>
+        <PersonList persons={filteredPersons}/>
       </div>
     </>
   )
