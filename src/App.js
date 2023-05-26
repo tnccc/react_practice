@@ -1,11 +1,13 @@
 import './App.css';
-import PracticeFilterArray from './components/PracticeFilterArray';
+import CommonContainer from './components/CommonContainer';
+
 
 
 function App() {
+
   return (
     <div className="App">
-      <PracticeFilterArray />
+      <CommonContainer />
     </div>
   );
 }
