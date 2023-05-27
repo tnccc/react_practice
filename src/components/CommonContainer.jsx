@@ -3,10 +3,12 @@ import { InputOfText }  from "./input/OfText"
 import { InputOfTextArea } from "./input/OfTextArea"
 import { InputOfRadio } from "./input/OfRadio"
 import { InputOfCheck } from "./input/OfCheck"
+import { InputOfSelect } from "./input/OfSelect"
 
 export const CommonContainer = () => {
   const [val, setVal] = useState('')
-  const [isChecked, setIsChecked] = useState(false)
+  const options = ['ラーメン', 'ドーナッツ', 'トンカツ']
+  const [selected, setSelected] = useState(options[0])
   const [foods, setFoods] = useState([
     {label: 'ラーメン', value: 100, checked: false},
     {label: 'ドーナッツ', value: 200, checked: false},
@@ -33,6 +35,11 @@ export const CommonContainer = () => {
       <InputOfCheck 
         foods={foods}
         setFoods={setFoods}
+      />
+      <InputOfSelect 
+        options={options}
+        selected={selected}
+        setSelected={setSelected}
       />
     </>
   )
