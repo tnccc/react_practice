@@ -1,6 +1,5 @@
 import { useState } from "react"
 export const InputOfCheck = ( {foods, setFoods} ) => {
-  console.log(foods)
   const [sum, setSum] = useState(0)
   const handleChange = (e) => {
     const newFoods = foods.map(food => {
