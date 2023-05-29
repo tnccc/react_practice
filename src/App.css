@@ -2,10 +2,16 @@
 
 
 html:root {
-  --bv          : .5rem;
-  --white       : #FFFFFF;
-  --border-color: #E8E8E8;
-  --button-color: #0033CC;
+  --bv                  : .5rem;
+  --white               : #FFFFFF;
+  --black               : #333333;
+  --pink                : pink;
+  --red                 : red;
+  --green               : green;
+  --orange              : orange;
+  --border-color        : #E8E8E8;
+  --button-color        : #0033CC;
+  --button-border-radius: 10px;
 }
 
 ul, li {
