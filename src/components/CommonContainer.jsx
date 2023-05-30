@@ -1,11 +1,10 @@
-import CommonButton from "./CommonButton"
-
+import Todo from './Todo'
 export const CommonContainer = () => {
   
   return (
     <>
       <div className='container'>
-        <CommonButton />
+        <Todo />
       </div>
     </>
   )
