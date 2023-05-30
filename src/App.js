@@ -1,4 +1,5 @@
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
 import CommonContainer from './components/CommonContainer';
 
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <div className="App">
-      <CommonContainer />
+      <ChakraProvider>
+        <CommonContainer />
+      </ChakraProvider>
     </div>
   );
 }
